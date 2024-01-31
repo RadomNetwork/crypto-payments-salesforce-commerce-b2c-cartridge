@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+
+    <type-extension type-id="Order">
+        <system-attribute-definitions>
+            <attribute-definition attribute-id="UUID">
+                <min-length>0</min-length>
+                <field-length>28</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="affiliatePartnerID">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="affiliatePartnerName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="businessType">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">B2C</display>
+                        <value>1</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">B2B</display>
+                        <value>2</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="cancelCode">
+                <value-definitions>
+                    <value-definition default="true">
+                        <display xml:lang="x-default">None Specified</display>
+                        <value>NONE_SPECIFIED</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Wrong Size</display>
+                        <value>WRONG_SIZE</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Wrong Color</display>
+                        <value>WRONG_COLOR</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="cancelDescription">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="channelType">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">Storefront</display>
+                        <value>1</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Call Center</display>
+                        <value>2</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Marketplace</display>
+                        <value>3</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">DSS</display>
+                        <value>4</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Store</display>
+                        <value>5</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Pinterest</display>
+                        <value>6</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Twitter</display>
+                        <value>7</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Facebook Ads</display>
+                        <value>8</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Subscriptions</display>
+                        <value>9</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Online Reservation</display>
+                        <value>10</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Customer Service Center</display>
+                        <value>11</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Instagram Commerce</display>
+                        <value>12</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Google</display>
+                        <value>13</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">TikTok</display>
+                        <value>14</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Snapchat</display>
+                        <value>15</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">WhatsApp</display>
+                        <value>16</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">YouTube</display>
+                        <value>17</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="confirmationStatus">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">NOTCONFIRMED</display>
+                        <value>0</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">CONFIRMED</display>
+                        <value>2</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="createdBy">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="creationDate"/>
+            <attribute-definition attribute-id="currencyCode">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerEmail">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerLocaleID">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerOrderReference">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="exportAfter"/>
+            <attribute-definition attribute-id="exportStatus">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">NOTEXPORTED</display>
+                        <value>0</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">EXPORTED</display>
+                        <value>1</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">EXPORTREADY</display>
+                        <value>2</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">EXPORTFAILED</display>
+                        <value>3</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="externalOrderNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="externalOrderStatus">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="externalOrderText">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="lastModified"/>
+            <attribute-definition attribute-id="orderNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="originalOrderNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="paymentStatus">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">NOTPAID</display>
+                        <value>0</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">PARTPAID</display>
+                        <value>1</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">PAID</display>
+                        <value>2</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="replaceCode">
+                <value-definitions>
+                    <value-definition default="true">
+                        <display xml:lang="x-default">None Specified</display>
+                        <value>NONE_SPECIFIED</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Wrong Size</display>
+                        <value>WRONG_SIZE</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Wrong Color</display>
+                        <value>WRONG_COLOR</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="replaceDescription">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="replacedOrderNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="replacementOrderNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="shippingStatus">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">NOTSHIPPED</display>
+                        <value>0</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">PARTSHIPPED</display>
+                        <value>1</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">SHIPPED</display>
+                        <value>2</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="status">
+                <value-definitions immutable="true">
+                    <value-definition>
+                        <display xml:lang="x-default">CREATED</display>
+                        <value>0</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">NEW</display>
+                        <value>3</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">OPEN</display>
+                        <value>4</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">COMPLETED</display>
+                        <value>5</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">CANCELLED</display>
+                        <value>6</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">REPLACED</display>
+                        <value>7</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">FAILED</display>
+                        <value>8</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+        </system-attribute-definitions>
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="checkoutSessionId">
+                <display-name xml:lang="x-default">CheckoutSessionId</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_network">
+                <display-name xml:lang="x-default">Network</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_token">
+                <display-name xml:lang="x-default">Token</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_transaction_id">
+                <display-name xml:lang="x-default">Radom Transaction id</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_webhook_data">
+                <display-name xml:lang="x-default">Radom webhook data</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="transactionHash">
+                <display-name xml:lang="x-default">TransactionHash</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="radom">
+                <display-name xml:lang="x-default">Radom</display-name>
+                <attribute attribute-id="radom_transaction_id"/>
+                <attribute attribute-id="radom_webhook_data"/>
+                <attribute attribute-id="checkoutSessionId"/>
+                <attribute attribute-id="transactionHash"/>
+                <attribute attribute-id="radom_network"/>
+                <attribute attribute-id="radom_token"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+</metadata>

@@ -1,0 +1,12 @@
+<isdecorate template="common/layout/checkout">
+	<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/radom.js');
+        assets.addCss('/css/radomConfirmation.css');
+    </isscript>
+	<div class="radompage">
+		<div class="loader successLoader" ></div>
+		<div class="btn btn-primary order-radom-confirm" data-continueurl="${pdict.continueUrl}"
+				data-orderid="${pdict.orderID}" data-ordertoken="${pdict.orderToken}"></div>
+	</div>
+</isdecorate>

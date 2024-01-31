@@ -1,0 +1,10 @@
+<li class="nav-item" data-method-id="${paymentOption.ID}">
+    <a class="nav-link radom-tab" data-toggle="tab" href="#radom-content" role="tab">
+        <img class="credit-card-option"
+                src="${URLUtils.staticURL('/images/checkouticon.svg')}"
+                height="32"
+                alt="${paymentOption.name}"
+                title="${paymentOption.name}"
+        >
+    </a>
+</li>

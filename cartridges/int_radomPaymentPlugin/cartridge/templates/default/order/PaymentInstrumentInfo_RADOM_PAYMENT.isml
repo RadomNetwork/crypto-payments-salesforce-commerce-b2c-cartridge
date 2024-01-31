@@ -1,0 +1,5 @@
+<isset name="webhookdata" value="${JSON.parse(pdict.Order.custom.radom_webhook_data)}" scope="page" />
+
+<div>Token: ${webhookdata.eventData.managedPayment.transactions[0].token}</div>
+<div>Network: ${webhookdata.eventData.managedPayment.transactions[0].network}</div>
+<div>TransactionHash: ${webhookdata.eventData.managedPayment.transactions[0].transactionHash}</div>

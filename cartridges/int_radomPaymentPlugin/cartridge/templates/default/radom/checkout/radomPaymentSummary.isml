@@ -1,0 +1,4 @@
+<div class="radom-card-type">
+    ${payment.paymentMethod}
+    ${Resource.msg('label.radom.payment.network', 'radom', null)}: ${pdict.order.webhook_data.eventData.managedPayment.transactions[0].network}
+</div>

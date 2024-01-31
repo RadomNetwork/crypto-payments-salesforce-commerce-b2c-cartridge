@@ -1,0 +1,55 @@
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #7FC7D9;
+    border-top-color: #3B3486;
+    border-left-color: #7FC7D9;
+    border-right-color: #7FC7D9;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: fixed;
+    left: 50%;
+    top: 25%;
+}
+
+.radompage {
+    width: 100%;
+    min-height: 300px;
+    max-height: max-content;
+    margin-bottom: 20px;
+    word-break: break-all;
+}
+
+.button-div {
+    margin: 80px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.containerdiv {
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid rgb(38, 184, 247);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.error-message {
+    color: rgb(247, 38, 62);
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

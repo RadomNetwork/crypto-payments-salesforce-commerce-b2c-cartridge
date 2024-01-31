@@ -1,0 +1,16 @@
+<isdecorate template="common/layout/checkout">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/radomConfirmation.css');
+    </isscript>
+    <div class="radompage">
+        <div class="containerdiv">
+            <p class="error-message">${pdict.errorMessage}</p>
+            <a href="${URLUtils.url('Home-Show')}"
+                class="btn btn-primary btn-block order-confirmation-continue-shopping" role="button"
+                aria-pressed="true">
+                ${Resource.msg('button.continue.shopping', 'confirmation', null)}
+            </a>
+        </div>
+    </div>
+</isdecorate>

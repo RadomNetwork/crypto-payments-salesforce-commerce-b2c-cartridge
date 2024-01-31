@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <custom-type type-id="radom_API_checkout_data">
+        <display-name xml:lang="x-default">Radom API checkout data</display-name>
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>organization</storage-scope>
+        <key-definition attribute-id="radom_API_checkout_data">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <attribute-definitions>
+            <attribute-definition attribute-id="cancelUrl">
+                <display-name xml:lang="x-default">Cancel Url</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="chargeCustomerNetworkFee">
+                <display-name xml:lang="x-default">Charge Customer Network Fee</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="customizations">
+                <display-name xml:lang="x-default">Customizations</display-name>
+                <type>text</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="gateway">
+                <display-name xml:lang="x-default">Gateway</display-name>
+                <type>text</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_API_Token">
+                <display-name xml:lang="x-default">Radom API Token</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_session_id">
+                <display-name xml:lang="x-default">Radom session id</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_transaction_id">
+                <display-name xml:lang="x-default">Radom Transaction id</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="radom_webhook_verification_key">
+                <display-name xml:lang="x-default">Radom webhook verification key</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="successUrl">
+                <display-name xml:lang="x-default">Success url</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="webhook_data">
+                <display-name xml:lang="x-default">Webhook data</display-name>
+                <type>text</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="radom_checkout">
+                <display-name xml:lang="x-default">Radom checkout</display-name>
+                <attribute attribute-id="cancelUrl"/>
+                <attribute attribute-id="successUrl"/>
+                <attribute attribute-id="radom_API_checkout_data"/>
+                <attribute attribute-id="customizations"/>
+                <attribute attribute-id="gateway"/>
+                <attribute attribute-id="chargeCustomerNetworkFee"/>
+                <attribute attribute-id="radom_API_Token"/>
+                <attribute attribute-id="radom_webhook_verification_key"/>
+            </attribute-group>
+            <attribute-group group-id="radom_session">
+                <display-name xml:lang="x-default">Radom Session</display-name>
+                <attribute attribute-id="webhook_data"/>
+                <attribute attribute-id="radom_session_id"/>
+                <attribute attribute-id="radom_transaction_id"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+
+</metadata>

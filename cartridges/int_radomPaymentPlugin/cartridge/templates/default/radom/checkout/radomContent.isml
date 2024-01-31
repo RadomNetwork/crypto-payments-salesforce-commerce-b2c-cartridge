@@ -1,0 +1,11 @@
+<!--- applicable credit cards--->
+<div class="tab-pane radom-content" id="radom-content" role="tabpanel">
+    <fieldset class="payment-form-fields">
+        <div class="row">
+                <button class="btn btn-block payWith-crypto btn-outline-primary" type="button"
+                    data-action="${URLUtils.url('Radom-PaymentStart')}">
+                    ${Resource.msg('button.payWith.crypto', 'radom', null)}
+                </button>
+        </div>
+    </fieldset>
+</div>
